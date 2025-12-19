@@ -152,7 +152,10 @@ var dissectcode: tdissectcodethread;
 
 implementation
 
-uses ProcessHandlerUnit, parsers, symbolhandler, symbolhandlerstructs, {$ifdef laztrunk}AVL_Tree{$else}laz_avl_Tree{$endif};
+uses
+  ProcessHandlerUnit, Parsers, SymbolHandler, SymbolHandlerStructs,
+  AVL_Tree;
+
 
 resourcestring
   rsInvalidDissectCodeFile = 'Invalid dissect code file';

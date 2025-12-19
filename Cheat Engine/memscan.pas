@@ -21,17 +21,17 @@ uses sysutils, unixporthelper, customtypehandler, commonTypeDefs, classes,
      savedscanhandler;
 {$else}
 uses
-     {$ifdef darwin}
-     macport, macportdefines, LCLType,
-     {$endif}
-     {$ifdef windows}
-     windows,
-     {$endif}
-     FileUtil, LCLIntf,sysutils, classes,ComCtrls,dialogs, NewKernelHandler,math,
-     SyncObjs, SyncObjs2 {$ifdef windows},windows7taskbar{$endif},SaveFirstScan, savedscanhandler, autoassembler,
-     symbolhandler, CEFuncProc{$ifdef windows},shellapi{$endif}, CustomTypeHandler, lua,lualib,lauxlib,
-     LuaHandler, {$ifdef windows}fileaccess,{$endif} groupscancommandparser, commonTypeDefs, LazUTF8,
-     forms, LazFileUtils, LCLProc, LCLVersion, AvgLvlTree, {$ifdef laztrunk}AVL_Tree{$else}laz_avl_Tree{$endif};
+  {$ifdef darwin}
+  MacPort, MacPortDefines, LCLType,
+  {$endif}
+  {$ifdef windows}
+  Windows,
+  {$endif}
+  FileUtil, LCLIntf, SysUtils, Classes, ComCtrls, Dialogs, NewKernelHandler, Math,
+  SyncObjs, SyncObjs2 {$ifdef windows}, Windows7Taskbar{$endif}, SaveFirstScan, SavedScanHandler, AutoAssembler,
+  SymbolHandler, CEFuncProc {$ifdef windows}, ShellAPI{$endif}, CustomTypeHandler, Lua, LuaLib, LAuxLib,
+  LuaHandler, {$ifdef windows}FileAccess,{$endif} GroupScanCommandParser, CommonTypeDefs, LazUTF8,
+  Forms, LazFileUtils, LCLProc, LCLVersion, AvgLvlTree, AVL_Tree;
 {$define customtypeimplemented}
 {$endif}
 

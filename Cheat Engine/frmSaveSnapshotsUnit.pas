@@ -258,7 +258,8 @@ begin
     //copy all selected snapshots to this folder
 
     ext:=ExtractFileExt(savedialog1.filename);
-    f:=ExtractFileNameWithoutExt(savedialog1.filename);
+    f := ChangeFileExt(ExtractFileName(SaveDialog1.FileName), '');
+
 
 
 

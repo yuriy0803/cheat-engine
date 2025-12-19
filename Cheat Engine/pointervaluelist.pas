@@ -14,15 +14,16 @@ interface
 
 uses
   {$ifdef darwin}
-  macport, macportdefines,
+  MacPort, MacPortDefines,
   {$endif}
   {$ifdef windows}
-  windows,
+  Windows,
   {$endif}
-  LCLIntf, dialogs, SysUtils, classes, ComCtrls, CEFuncProc,
-     NewKernelHandler, symbolhandler, symbolhandlerstructs, math,
-     bigmemallochandler, maps, luahandler, lua, lauxlib, lualib, LuaClass,
-     LuaObject, zstream, commonTypeDefs, AvgLvlTree, {$ifdef laztrunk}AVL_Tree{$else}laz_avl_Tree{$endif};
+  LCLIntf, Dialogs, SysUtils, Classes, ComCtrls, CEFuncProc,
+  NewKernelHandler, SymbolHandler, SymbolHandlerStructs, Math,
+  BigMemAllocHandler, Maps, LuaHandler, Lua, LAuxLib, LuaLib, LuaClass,
+  LuaObject, ZStream, CommonTypeDefs, AvgLvlTree, AVL_Tree;
+
 
 const scandataversion=1;
 

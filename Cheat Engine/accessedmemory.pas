@@ -5,9 +5,11 @@ unit AccessedMemory;
 interface
 
 uses
-  {$ifdef windows}windows, {$endif}Classes, SysUtils, FileUtil, laz.VirtualTrees, Forms, Controls, Graphics,
-  Dialogs, StdCtrls, ExtCtrls, Menus, ComCtrls, genericHotkey, DBK32functions,
-  commonTypeDefs, newkernelhandler, betterControls,AvgLvlTree, {$ifdef laztrunk}AVL_Tree{$else}laz_avl_Tree{$endif};
+  {$ifdef windows}Windows, {$endif}
+  Classes, SysUtils, FileUtil, Laz.VirtualTrees, Forms, Controls, Graphics,
+  Dialogs, StdCtrls, ExtCtrls, Menus, ComCtrls, GenericHotkey, DBK32Functions,
+  CommonTypeDefs, NewKernelHandler, BetterControls, AvgLvlTree, AVL_Tree;
+
 
 resourcestring
   rsAMError = 'Error';
